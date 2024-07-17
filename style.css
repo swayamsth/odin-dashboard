@@ -40,6 +40,7 @@
 }
 
 body{
+    color: var(--primary-color);
     background-color: var(--bg-color);
     height: 100vh;
 }
@@ -53,6 +54,7 @@ html{
 
 .logo{
     display: flex;
+    gap: 10px;
 }
 
 .logo > svg{
@@ -60,9 +62,53 @@ html{
 }
 
 .companyName{
+    margin-top: 3.5px;
     font-family: var(--ff-poppins);
     font-weight: var(--fw-700);
-    color: var(--primary-color);
     font-size: 1.5rem;
 
+}
+
+.h1{
+    font-size: 1.55rem;
+    font-weight: var(--fw-600);
+}
+
+.search{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: var(--bg-color);
+    transition: var(--transition);
+    width: 335px;
+}
+
+.search-icon > svg{
+    color: var(--search-icon);
+}
+
+.search-input{
+    color: var(--search-txt);
+    font-size: 0.875rem;
+    margin-left: 15px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.search-input::placeholder{
+    color: var(--search-txt);
+}
+
+.notifications > svg{
+    color: var(--primary-color);
+}
+
+.notifications{
+    display: inline-flex;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    padding: 10px;
 }
