@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Lato:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+
+    /* colors */
+    --primary-color: #343C6A;
+    --white: #FFFFFF;
+    --black: #000000;
+    --active: #2D60FF;
+    --inactive: #B1B1B1;
+    --bg-color: #F5F7FA;
+    --search-icon: #718EBF;
+    --search-txt: #8BA3CB;
+    --lining: #E3ECF3;
+    --announcement-txt: #232323;
+
+    /* typography */
+    --ff-poppins: 'Poppins', sans-serif;
+    --ff-inter: 'Inter', sans-serif;
+    --ff-league: 'Lato', sans-serif;
+
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+
+    /* transition */
+    --transition: all 300ms ease;
+}
+
+/* Initial */
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+
+html{
+    font-family: var(--ff-inter);
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+.logo{
+    display: flex;
+}
+
+.logo > svg{
+    color: var(--active);
+}
+
+.companyName{
+    font-family: var(--ff-poppins);
+    font-weight: var(--fw-700);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+
+}
