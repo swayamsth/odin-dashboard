@@ -50,6 +50,14 @@ html{
     scroll-behavior: smooth;
 }
 
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 /* GRID */
 
 .container{
@@ -122,12 +130,14 @@ html{
     border-radius: 40px;
     background-color: var(--bg-color);
     transition: var(--transition);
-    width: 335px;
+    /* width: 335px; */
     height: 50px;
 }
 
 .search-icon > svg{
     color: var(--search-icon);
+    display: flex;
+    align-items: center;
 }
 
 .search-input{
@@ -136,6 +146,7 @@ html{
     margin-left: 15px;
     outline: none;
     border: none;
+    width: 276px;
     background: transparent;
 }
 
@@ -163,3 +174,5 @@ html{
     height: 60px;
     border-radius: 50%;
 }
+
+/* SIDEBAR */
