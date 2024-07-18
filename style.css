@@ -11,7 +11,8 @@
     --bg-color: #F5F7FA;
     --search-icon: #718EBF;
     --search-txt: #8BA3CB;
-    --lining: #E3ECF3;
+    --seperating-line: #E6EFF5;
+    --announcement-lining: #E3ECF3;
     --announcement-txt: #232323;
 
     /* typography */
@@ -214,4 +215,59 @@ li > a:focus{
     color: var(--white);
     background-color: var(--active);
     border-radius: 16px;
+}
+
+/* MAIN */
+
+.main{
+    background-color: pink; /* remove this later */
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+}
+
+.main-profile{
+    background-color: var(--white);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 28px;
+}
+
+.welcome{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.text{
+    font-family: var(--ff-poppins);
+}
+
+.buttons{
+    display: flex;
+    gap: 40px;
+}
+
+.btn{
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: var(--white);
+    background-color: var(--active);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px 0 var(--search-icon);
+}
+
+.main-content{
+    margin-top: 25px;
+    background-color: red;
+    height: 100px;
+    width: 100px;
 }
