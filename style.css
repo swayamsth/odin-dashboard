@@ -48,6 +48,7 @@ body{
 
 html{
     font-family: var(--ff-inter);
+    line-height: 1.2;
     scroll-behavior: smooth;
 }
 
@@ -265,9 +266,32 @@ li > a:focus{
     box-shadow: 0 2px 4px 0 var(--search-icon);
 }
 
+/* MAIN GRID CONTENT */
+
 .main-content{
     margin-top: 25px;
-    background-color: red;
-    height: 100px;
-    width: 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 30px;
+}
+
+.trending{
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+}
+
+.projects-headline{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.h2{
+    font-size: 1.25rem;
+    font-weight: var(--fw-600);
+}
+
+.h3{
+    font-size: 1rem;
+    font-weight: var(--fw-600);
 }
