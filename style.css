@@ -14,6 +14,7 @@
     --seperating-line: #E6EFF5;
     --announcement-lining: #E3ECF3;
     --announcement-txt: #232323;
+    --card-border: #DFEAF2;
 
     /* typography */
     --ff-poppins: 'Poppins', sans-serif;
@@ -195,7 +196,6 @@ li > a{
 
 .sidebar{
     background-color: var(--white);
-    height: 100vh;
 }
 
 .sidebar-menu > ul{
@@ -284,6 +284,7 @@ li > a:focus{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-bottom: 10px;
 }
 
 .h2{
@@ -294,4 +295,53 @@ li > a:focus{
 .h3{
     font-size: 1rem;
     font-weight: var(--fw-600);
+}
+
+.project-cards{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.h4{
+    font-size: 0.875rem;
+    margin-bottom: 5px;
+}
+
+.card-text{
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+}
+
+.project-card{
+    border: 1px solid var(--card-border);
+    background-color: var(--white);
+    border-radius: 30px;
+    padding: 1rem;
+    /* height: 10rem; */
+}
+
+.icons{
+    /* border-top: 1px solid var(--card-border); */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+hr{
+    width: inherit;
+    background-color: var(--card-border);
+    height: 1px;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+.icons > svg{
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 7.5px;
 }
