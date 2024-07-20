@@ -65,7 +65,6 @@ a{
 
 .container{
     display: grid;
-    /* grid-template-rows: 1fr 1fr; */
     grid-template-columns: 1fr 5fr;
 
 }
@@ -133,11 +132,10 @@ a{
     width: max-content;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
     border-radius: 40px;
     background-color: var(--bg-color);
     transition: var(--transition);
-    /* width: 335px; */
     height: 50px;
 }
 
@@ -176,9 +174,11 @@ a{
     padding: 10px;
 }
 
-.user-profile > img{
+img{
     width: 60px;
     height: 60px;
+    object-fit: cover;
+    object-position: center;
     border-radius: 50%;
 }
 
@@ -221,10 +221,7 @@ li > a:focus{
 /* MAIN */
 
 .main{
-    background-color: pink; /* remove this later */
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 25px;
+    padding: 25px 30px 2rem 30px;
 }
 
 .main-profile{
@@ -285,6 +282,10 @@ li > a:focus{
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 2rem;
+}
+
+.headline-interaction{
+    margin-right: 1.25rem;
 }
 
 .h2{
@@ -371,4 +372,17 @@ hr, .announcement-hr{
 
 .announcement-items:last-child{
     padding-bottom: 3.5rem;
+}
+
+.trending-flex{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.trending-items{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
 }
