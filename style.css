@@ -347,12 +347,23 @@ hr, .announcement-hr{
 }
 
 .icons > svg{
-    background-color: var(--bg-color);
     color: var(--primary-color);
+}
+
+.icons > div{
+    background-color: var(--bg-color);
     border-radius: 50%;
     width: 30px;
     height: 30px;
     padding: 7.5px;
+    transition: var(--transition);
+}
+
+.icons > div:hover{
+    background-color: var(--search-icon);
+    color: var(--white);
+    transform: scale(1.1);
+    box-shadow: 0 2px 4px 0 var(--search-icon);
 }
 
 .information-container{
